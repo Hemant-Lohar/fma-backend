@@ -24,7 +24,7 @@ app.post("/api/registration", (req, res) => {
   const sqlinsert =
     "INSERT INTO fma (name,gender,age, session) VALUE (?,?,?,?);";
   db.query(sqlinsert, [name, gender, age, session], (err, result) => {
-    console.log(result);
+    res.send()
   });
 });
 
