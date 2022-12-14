@@ -29,6 +29,6 @@ app.post("/api/registration", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
+app.listen("https://fma-api.onrender.com", () => {
   console.log(`running`);
 });
