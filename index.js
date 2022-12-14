@@ -31,7 +31,7 @@ app.post("/api/registration", (req, res) => {
 app.get("/api/get", (req, res) => {
   const sqlselect = "SELECT * FROM fma;";
   db.query(sqlselect, (err, result) => {
-    console.log(result);
+    res.send()
   });
 });
 
